@@ -8,9 +8,9 @@ Every numbered directory is a self-contained historical iteration:
 The folders are numbered chronologically so GitHub sorts them in development
 order. Do not place a ROM or user save inside these checked-out directories.
 
-Latest iteration: 09-responsive-smoothing
+Latest iteration: 10-sprite-safe-smoothing
 
 - Compatibility-renderer play remains authoritative.
-- Responsive Smooth mode reduces the visual input lag of the earlier 50/50
-  blend while preserving the original simulation and controls.
-- Matching archive: releases/windows/09-responsive-smoothing-windows.zip
+- Sprite-Safe Smooth mode preserves small 2D animation updates while retaining
+  low-latency smoothing for broad track and camera motion.
+- Matching archive: releases/windows/10-sprite-safe-smoothing-windows.zip

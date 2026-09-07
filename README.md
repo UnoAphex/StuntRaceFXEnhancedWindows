@@ -8,14 +8,17 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[09-responsive-smoothing](source/09-responsive-smoothing/build) reduces the presentation delay of Smooth mode while retaining the original compatibility renderer, physics, input, collision, timing, and game speed.
+[10-sprite-safe-smoothing](source/10-sprite-safe-smoothing/build) keeps every
+small 2D sprite/tile animation update while applying responsive smoothing only
+to broad race-scene motion.
 
-[Download the latest Windows build](releases/windows/09-responsive-smoothing-windows.zip)
+[Download the latest Windows build](releases/windows/10-sprite-safe-smoothing-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [10-sprite-safe-smoothing](source/10-sprite-safe-smoothing) | 2D-safe smoothing and complete sprite animation |
 | [09-responsive-smoothing](source/09-responsive-smoothing) | Lower-latency compatibility smoothing |
 | [08-native-track-v4.2-road-vehicle](source/08-native-track-v4.2-road-vehicle) | Road-width and vehicle alignment |
 | [07-native-track-v4.1-stability](source/07-native-track-v4.1-stability) | Native-renderer stability |
