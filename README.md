@@ -1,17 +1,14 @@
 # Stunt Race FX Enhanced Windows
 
-An experimental Windows enhancement project built around the original Stunt
-Race FX game logic, with a compatibility renderer and an optional native-track
-research path.
+Stunt Race FX Enhanced Windows is a ready-to-run Windows distribution of the Stunt Race FX static recompilation project. It packages the required runtime, launchers, and corresponding source code to make setup and play on modern Windows systems straightforward.
 
-No commercial ROM, save data, save state, replay, capture, or ROM-derived
-export is included. Supply your own legally obtained USA Rev 1 ROM at runtime.
+An experimental Windows enhancement project built around the original Stunt Race FX game logic, with a compatibility renderer and an optional native-track research path.
+
+This repository does not include the original game ROM, any commercial ROM, save data, save state, replay, capture, or ROM-derived export, or any copyrighted Nintendo assets. You must provide your own legally obtained USA Rev 1 ROM at runtime.
 
 ## Latest build
 
-[09-responsive-smoothing](source/09-responsive-smoothing/build) reduces the
-presentation delay of Smooth mode while retaining the original compatibility
-renderer, physics, input, collision, timing, and game speed.
+[09-responsive-smoothing](source/09-responsive-smoothing/build) reduces the presentation delay of Smooth mode while retaining the original compatibility renderer, physics, input, collision, timing, and game speed.
 
 [Download the latest Windows build](releases/windows/09-responsive-smoothing-windows.zip)
 
@@ -30,5 +27,4 @@ renderer, physics, input, collision, timing, and game speed.
 | [01-milestone-2](source/01-milestone-2) | Second porting milestone |
 | [00-milestone-1](source/00-milestone-1) | Initial milestone |
 
-Each version keeps its runnable files in build/ and the exact expanded source in
-source/. Build-only Windows archives are under releases/windows/.
+Each version keeps its runnable files in build/ and the exact expanded source in source/. Build-only Windows archives are under releases/windows/.
