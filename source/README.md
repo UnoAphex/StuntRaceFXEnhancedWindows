@@ -8,9 +8,9 @@ Every numbered directory is a self-contained historical iteration:
 The folders are numbered chronologically so GitHub sorts them in development
 order. Do not place a ROM or user save inside these checked-out directories.
 
-Latest iteration: 10-sprite-safe-smoothing
+Latest iteration: 12-source-informed-native-v4.6
 
-- Compatibility-renderer play remains authoritative.
-- Sprite-Safe Smooth mode preserves small 2D animation updates while retaining
-  low-latency smoothing for broad track and camera motion.
-- Matching archive: releases/windows/10-sprite-safe-smoothing-windows.zip
+- Compatibility-renderer play remains authoritative and is the default.
+- The optional native renderer now uses source-informed road scale and ordered
+  live wheel pose while keeping private original source out of the repository.
+- Matching archive: releases/windows/12-source-informed-native-v4.6-windows.zip

@@ -8,17 +8,19 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[11-compat-performance-v4.5](source/11-compat-performance-v4.5/build) adds
-detailed frame-time profiling, stable 60.0988 Hz scheduling, allocation-free
-steady-state presentation paths, and measured bridge/ultrawide optimization
-while preserving sprite-safe responsive smoothing.
+[12-source-informed-native-v4.6](source/12-source-informed-native-v4.6/build)
+uses verified XLR8 road-scale and wheel-order structures to widen the native
+road correctly, drive world-space vehicle pose from live wheel state, align the
+chase camera with steering, and reduce native painter-order flicker. The v4.5
+compatibility-performance renderer remains intact and is still the default.
 
-[Download the latest Windows build](releases/windows/11-compat-performance-v4.5-windows.zip)
+[Download the latest Windows build](releases/windows/12-source-informed-native-v4.6-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [12-source-informed-native-v4.6](source/12-source-informed-native-v4.6) | XLR8-informed road scale, wheel pose, camera, and native ordering |
 | [11-compat-performance-v4.5](source/11-compat-performance-v4.5) | Compatibility profiling, stable frame pacing, and hot-path cleanup |
 | [10-sprite-safe-smoothing](source/10-sprite-safe-smoothing) | 2D-safe smoothing and complete sprite animation |
 | [09-responsive-smoothing](source/09-responsive-smoothing) | Lower-latency compatibility smoothing |
