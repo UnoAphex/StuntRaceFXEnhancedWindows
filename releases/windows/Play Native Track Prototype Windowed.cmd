@@ -1,0 +1,16 @@
+@echo off
+setlocal
+pushd "%~dp0"
+set "SRF_RENDERER=native"
+set "SRF_FILTER=edge"
+set "SRF_SHOW_FPS=0"
+set "SRF_GSU_CLOCK=300"
+set "SRF_MATERIALS=1"
+set "SRF_MOTION=1"
+set "SRF_CAP=60"
+set "SRF_NATIVE_FOV=58"
+set "SRF_NATIVE_ROAD_SCALE=2.0"
+set "SRF_NATIVE_DISTANCE=30000"
+set "SRF_NATIVE_FOG=1"
+set "SRF_WINDOW=1600x900"
+start "" "%~dp0StuntRaceFX.exe"

@@ -1,0 +1,32 @@
+STUNT RACE FX PLAYABLE COMPATIBILITY BUILD - SOURCE INFORMATION
+================================================================
+
+Frontend source:
+  Included in source-code.zip under frontend/.
+  License: GNU General Public License version 3 or later.
+
+bsnes libretro core:
+  Project: https://github.com/libretro/bsnes-libretro
+  Source snapshot commit: 260f5234410d0899f8446882c63d17f891b686e0
+  The complete snapshot is included in source-code.zip under bsnes-libretro/.
+  License: GNU General Public License version 3 or later.
+
+Packaged core binary:
+  File: bsnes_libretro.dll
+  Core-reported version: bsnes 115
+  SHA-256: A913C28EFDA383088E55BD31903AE14CB20C926E9BD69B5EC0C3E650AC8A367C
+  Binary source: https://buildbot.libretro.com/nightly/windows/x86_64/latest/bsnes_libretro.dll.zip
+
+libretro.h:
+  Copyright (C) 2010-2024 The RetroArch team.
+  License: MIT; the full notice is retained at the top of the included header.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib; see SDL2-LICENSE.txt.
+
+Build environment:
+  Windows x64, Microsoft Visual C++ 2022, SDL2.
+  Run build-frontend.cmd from the source bundle after setting SDL2_ROOT to an
+  SDL2 development package containing include/SDL2/SDL.h and lib/x64/SDL2.lib.
+

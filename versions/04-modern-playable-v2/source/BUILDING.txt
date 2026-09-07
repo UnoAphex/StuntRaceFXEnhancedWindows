@@ -1,0 +1,34 @@
+STUNT RACE FX MODERN PLAYABLE V2 - BUILD NOTES
+==============================================
+
+Frontend (Windows x64)
+----------------------
+Requirements:
+  - Visual Studio 2022 C++ Build Tools
+  - SDL2 development libraries for Visual C++
+
+Set SDL2_ROOT to the extracted SDL2 development directory, open a command
+prompt in frontend, and run build-frontend.cmd. It produces StuntRaceFX.exe.
+
+Runtime files
+-------------
+Place StuntRaceFX.exe beside:
+  - SDL2.dll
+  - an x64 Snes9x libretro core named snes9x_libretro.dll
+  - your legally obtained Stunt Race FX ROM
+
+The packaged core corresponds to the clean Snes9x source snapshot included in
+the snes9x directory. The executable dynamically loads the core at runtime.
+
+Scene tools
+-----------
+The scene-tools directory contains optional research utilities for inspecting
+Super FX RAM captures and extracting camera/render-list information. They are
+not required to build or play the frontend.
+
+Important scope note
+--------------------
+This v2 checkpoint improves presentation, pacing, controls, latency options,
+and usability around the original emulated renderer. Native high-resolution
+geometry, adjustable FOV, and extended native culling/draw distance remain
+future renderer work; they are not claimed by this release.

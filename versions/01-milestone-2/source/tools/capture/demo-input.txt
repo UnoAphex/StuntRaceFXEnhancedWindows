@@ -1,0 +1,11 @@
+# Deterministic menu-driving input for capture runs.
+# Format: first_frame last_frame SNES_button_mask_hex
+# START=1000, A=0080, B=8000, UP=0800, DOWN=0400, LEFT=0200, RIGHT=0100
+120 121 1000
+240 241 0080
+360 361 0080
+480 481 1000
+600 601 0080
+720 721 0080
+840 841 1000
+960 961 0080

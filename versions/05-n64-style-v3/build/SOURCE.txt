@@ -1,0 +1,30 @@
+STUNT RACE FX N64 STYLE PLAYABLE V3 - SOURCE INFORMATION
+=========================================================
+
+Frontend:
+  Source is included in source-code.zip under frontend/.
+  License: MIT. See FRONTEND-LICENSE-MIT.txt.
+
+Snes9x libretro compatibility core:
+  Official project: https://github.com/libretro/snes9x
+  Source revision: 890b5d4
+  The complete source snapshot plus the v3 changes are included under core/.
+  License: Snes9x personal/non-commercial license. See SNES9X-LICENSE.txt.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib. See SDL2-LICENSE.txt.
+
+MinGW runtime:
+  libwinpthread-1.dll is included for the source-built core. It is part of the
+  GCC/MinGW-w64 runtime distribution and is redistributable under its applicable
+  free-software runtime terms; source/build details are in source-code.zip.
+
+Material assets:
+  Runtime-ready 64x64 BMP tiles are included under assets/. Source images,
+  processing script, exact generation prompts, and asset notes are included in
+  source-code.zip under materials/.
+
+Game data:
+  No commercial ROM, save data, or ROM-derived assets are included. Supply your
+  own legally obtained USA Rev 1 ROM beside StuntRaceFX.exe.

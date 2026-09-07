@@ -1,0 +1,32 @@
+STUNT RACE FX MODERN PLAYABLE V2 - SOURCE INFORMATION
+=====================================================
+
+Frontend:
+  Source is included in source-code.zip under frontend/.
+  License: MIT. See FRONTEND-LICENSE-MIT.txt.
+
+Snes9x libretro core:
+  Official project: https://github.com/snes9xgit/snes9x
+  Included source snapshot: 7a8878f1306f65594c30b7d86dee41d972c2e495
+  Core binary SHA-256:
+  0D60309B98B7C6A91E8AE51C470C2B70B7CEBC75488E5E2B0E26F275210CE310
+  Binary source:
+  https://buildbot.libretro.com/nightly/windows/x86_64/latest/snes9x_libretro.dll.zip
+  License: Snes9x personal/non-commercial license. See SNES9X-LICENSE.txt.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib. See SDL2-LICENSE.txt.
+
+libretro.h:
+  Copyright (C) 2010-2024 The RetroArch team.
+  License: MIT; its full notice is retained in the included header.
+
+Scene-research tools:
+  source-code.zip also includes the Python tools used to inspect captured
+  Super FX memory, compare live scenes, and extract camera/render-list data.
+  These tools are development aids; the playable build does not require them.
+
+Game data:
+  No commercial ROM or save data is included. Supply your own legally obtained
+  Stunt Race FX ROM beside StuntRaceFX.exe when launching the build.
