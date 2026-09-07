@@ -1,0 +1,13 @@
+# Deterministic first-track route for compatibility performance testing.
+# Columns: first frame, last frame, libretro joypad bitmask.
+600 601 1000
+850 851 8000
+1120 1121 8000
+1250 1251 8000
+1350 1351 8000
+1450 1451 8000
+1750 1751 8000
+2100 2101 8000
+2200 5200 8000
+2850 3300 0200
+3500 3950 0100

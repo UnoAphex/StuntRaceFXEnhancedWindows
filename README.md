@@ -8,16 +8,18 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[10-sprite-safe-smoothing](source/10-sprite-safe-smoothing/build) keeps every
-small 2D sprite/tile animation update while applying responsive smoothing only
-to broad race-scene motion.
+[11-compat-performance-v4.5](source/11-compat-performance-v4.5/build) adds
+detailed frame-time profiling, stable 60.0988 Hz scheduling, allocation-free
+steady-state presentation paths, and measured bridge/ultrawide optimization
+while preserving sprite-safe responsive smoothing.
 
-[Download the latest Windows build](releases/windows/10-sprite-safe-smoothing-windows.zip)
+[Download the latest Windows build](releases/windows/11-compat-performance-v4.5-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [11-compat-performance-v4.5](source/11-compat-performance-v4.5) | Compatibility profiling, stable frame pacing, and hot-path cleanup |
 | [10-sprite-safe-smoothing](source/10-sprite-safe-smoothing) | 2D-safe smoothing and complete sprite animation |
 | [09-responsive-smoothing](source/09-responsive-smoothing) | Lower-latency compatibility smoothing |
 | [08-native-track-v4.2-road-vehicle](source/08-native-track-v4.2-road-vehicle) | Road-width and vehicle alignment |

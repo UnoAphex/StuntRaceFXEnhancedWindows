@@ -1,2 +1,18 @@
-*.*sfc
-*.*smc 
+# User-supplied game images
+*.sfc
+*.smc
+
+# Runtime saves, states, and input recordings
+*.srm
+*.sav
+*.state
+*.state[0-9]*
+replay-last.srf
+*.replay
+
+# Generated diagnostics and benchmarks
+**/capture/
+**/captures/
+**/benchmark-results/
+snes9x_f*.bin
+present_f*.ppm
