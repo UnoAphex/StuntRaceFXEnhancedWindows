@@ -1,0 +1,33 @@
+STUNT RACE FX NATIVE TRACK PROTOTYPE v4.2 - SOURCE INFORMATION
+==============================================================
+
+Frontend and native-track research:
+  Source is included in the adjacent expanded source/frontend/ directory in
+  the repository.
+  NATIVE_TRACK_RESEARCH.md documents the traced format and current limitations.
+  The offline inspection tool is under tools/track/.
+  License: MIT. See FRONTEND-LICENSE-MIT.txt.
+
+Snes9x libretro compatibility core:
+  Official project: https://github.com/libretro/snes9x
+  Source revision: 890b5d4
+  The complete source snapshot plus local hooks are included under core/.
+  License: Snes9x personal/non-commercial license. See SNES9X-LICENSE.txt.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib. See SDL2-LICENSE.txt.
+
+MinGW runtime:
+  libwinpthread-1.dll belongs to the source-built core's MinGW-w64 runtime.
+  Source/build details are in the adjacent expanded source directory.
+
+Material assets:
+  Runtime BMP tiles are included under assets/. Source images, processing
+  script, prompts, and notes are under source/materials/ in the repository.
+
+Game data:
+  No commercial ROM, save data, state, replay, capture, or generated track
+  export is included. Supply your own legally obtained USA Rev 1 ROM beside
+  StuntRaceFX.exe. The native cache is created in memory from that ROM at run
+  time and is not written into the package.
