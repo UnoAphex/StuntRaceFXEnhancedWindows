@@ -8,18 +8,26 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[12-source-informed-native-v4.6](source/12-source-informed-native-v4.6/build)
-uses verified XLR8 road-scale and wheel-order structures to widen the native
-road correctly, drive world-space vehicle pose from live wheel state, align the
-chase camera with steering, and reduce native painter-order flicker. The v4.5
-compatibility-performance renderer remains intact and is still the default.
+[17-wide-objects-v4.11](source/17-wide-objects-v4.11/build)
+adds original texture-mapped polygon packets to the expanded view and a guarded
+edge-sprite compositor, with the race-window bezel excluded from the wider world.
+The center remains original-resolution.
+Use either **Play True Wide Preview** launcher; Ctrl+W toggles the extension.
+Fully offscreen objects that the Super FX code rejects before face submission,
+including some rival cars, remain pending. See the included research notes.
+The experimental native renderer is unchanged from version 12.
 
-[Download the latest Windows build](releases/windows/12-source-informed-native-v4.6-windows.zip)
+[Download the latest Windows build](releases/windows/17-wide-objects-v4.11-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [17-wide-objects-v4.11](source/17-wide-objects-v4.11) | Original textured side polygons, guarded edge sprites, and crisp-center architecture findings |
+| [16-wide-cleanup-v4.10](source/16-wide-cleanup-v4.10) | Side palette/brightness, border-line removal, texture sampling and cache-lifetime cleanup |
+| [15-compat-wide-v4.9](source/15-compat-wide-v4.9) | First expanded-world compatibility preview; displayed-bitmap synchronization and GPU side geometry |
+| [14-compat-draw-stream-v4.8](source/14-compat-draw-stream-v4.8) | Original polygon capture and optional latest/previous outline comparison |
+| [13-compat-geometry-probe-v4.7](source/13-compat-geometry-probe-v4.7) | Playable compatibility baseline with opt-in geometry diagnostics; no new visual rendering yet |
 | [12-source-informed-native-v4.6](source/12-source-informed-native-v4.6) | XLR8-informed road scale, wheel pose, camera, and native ordering |
 | [11-compat-performance-v4.5](source/11-compat-performance-v4.5) | Compatibility profiling, stable frame pacing, and hot-path cleanup |
 | [10-sprite-safe-smoothing](source/10-sprite-safe-smoothing) | 2D-safe smoothing and complete sprite animation |
