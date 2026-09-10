@@ -1,0 +1,51 @@
+STUNT RACE FX COMPATIBILITY HD WIDE v4.12 - SOURCE INFORMATION
+=======================================================================
+
+v4.12 corresponds to source/18-compat-hd-wide-v4.12/source in the repository.
+See COMPATIBILITY_HD_WIDE.md for current changes, tests, performance, and known
+limits. ROM-free regression tests are under tools/perf. WIDE_OBJECTS.md describes
+the inherited v4.11 polygon and object-capture work.
+
+v4.9 adds read-only pre-clip camera-polygon observation, GPU side viewports,
+and scanline BG2 presentation. See COMPATIBILITY_WIDE.md in the matching
+expanded source snapshot. Original commercial source and assets are NOT
+included. Source/frontend/compat_wide_present.h and core/srf_wide_*.h contain
+the new path. Native renderer implementation is unchanged.
+
+v4.8 adds guarded original polygon capture and an optional outline overlay.
+See COMPATIBILITY_DRAW_STREAM.md. v4.7 diagnostics are inherited.
+Native renderer implementation and its launchers are unchanged from v4.6.
+
+Frontend and native-track research:
+  Source is included in the adjacent expanded source/frontend/ directory in
+  the repository.
+  NATIVE_TRACK_RESEARCH.md documents the traced format and current limitations.
+  COMPATIBILITY_PERFORMANCE.md documents profiling and optimization results.
+  SOURCE_INFORMED_RENDERER.md documents the v4.6 native geometry findings.
+  The repeatable benchmark tools are under tools/perf/.
+  The offline inspection tool is under tools/track/.
+  License: MIT. See FRONTEND-LICENSE-MIT.txt.
+
+Snes9x libretro compatibility core:
+  Official project: https://github.com/libretro/snes9x
+  Source revision: 890b5d4
+  The complete source snapshot plus local hooks are included under core/.
+  License: Snes9x personal/non-commercial license. See SNES9X-LICENSE.txt.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib. See SDL2-LICENSE.txt.
+
+MinGW runtime:
+  libwinpthread-1.dll belongs to the source-built core's MinGW-w64 runtime.
+  Source/build details are in the adjacent expanded source directory.
+
+Material assets:
+  Runtime BMP tiles are included under assets/. Source images, processing
+  script, prompts, and notes are under source/materials/ in the repository.
+
+Game data:
+  No commercial ROM, save data, state, replay, capture, or generated track
+  export is included. Supply your own legally obtained USA Rev 1 ROM beside
+  StuntRaceFX.exe. The native cache is created in memory from that ROM at run
+  time and is not written into the package.

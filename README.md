@@ -8,21 +8,24 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[17-wide-objects-v4.11](source/17-wide-objects-v4.11/build)
-adds original texture-mapped polygon packets to the expanded view and a guarded
-edge-sprite compositor, with the race-window bezel excluded from the wider world.
-The center remains original-resolution.
-Use either **Play True Wide Preview** launcher; Ctrl+W toggles the extension.
-Fully offscreen objects that the Super FX code rejects before face submission,
-including some rival cars, remain pending. See the included research notes.
-The experimental native renderer is unchanged from version 12.
+[19-session-recorder-v4.13](source/19-session-recorder-v4.13/build) adds the
+continuous reconstruction-data workflow to the v4.12 HD-wide compatibility
+renderer. Its dedicated launcher stores lossless, compressed, timestamped play
+sessions under the root-level ignored `recordings/` directory. Sessions include
+geometry, cameras, palette, VRAM, sprites, framebuffer layers, Super FX state and
+traces, WRAM, controller input, timing, and periodic exact emulator checkpoints.
+They can be verified and reconstructed at any frame with the included inspection
+tool. Normal launchers remain unchanged and do not record. The experimental
+native renderer is unchanged from version 12.
 
-[Download the latest Windows build](releases/windows/17-wide-objects-v4.11-windows.zip)
+[Download the latest Windows build](releases/windows/19-session-recorder-v4.13-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [19-session-recorder-v4.13](source/19-session-recorder-v4.13) | Continuous lossless reconstruction sessions with compression, indexing, checkpoints, and extraction tool |
+| [18-compat-hd-wide-v4.12](source/18-compat-hd-wide-v4.12) | Output-resolution center and side geometry with separate original HUD/sprite composition |
 | [17-wide-objects-v4.11](source/17-wide-objects-v4.11) | Original textured side polygons, guarded edge sprites, and crisp-center architecture findings |
 | [16-wide-cleanup-v4.10](source/16-wide-cleanup-v4.10) | Side palette/brightness, border-line removal, texture sampling and cache-lifetime cleanup |
 | [15-compat-wide-v4.9](source/15-compat-wide-v4.9) | First expanded-world compatibility preview; displayed-bitmap synchronization and GPU side geometry |

@@ -16,3 +16,8 @@ replay-last.srf
 **/benchmark-results/
 snes9x_f*.bin
 present_f*.ppm
+
+# Local reconstruction sessions are intentionally retained for research but
+# must never be committed because they contain ROM-derived runtime data.
+recordings/*
+!recordings/README.md
