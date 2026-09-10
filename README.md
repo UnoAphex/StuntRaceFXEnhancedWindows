@@ -8,22 +8,22 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[19-session-recorder-v4.13](source/19-session-recorder-v4.13/build) adds the
-continuous reconstruction-data workflow to the v4.12 HD-wide compatibility
-renderer. Its dedicated launcher stores lossless, compressed, timestamped play
-sessions under the root-level ignored `recordings/` directory. Sessions include
-geometry, cameras, palette, VRAM, sprites, framebuffer layers, Super FX state and
-traces, WRAM, controller input, timing, and periodic exact emulator checkpoints.
-They can be verified and reconstructed at any frame with the included inspection
-tool. Normal launchers remain unchanged and do not record. The experimental
-native renderer is unchanged from version 12.
+[23-unified-compat-timing-v4.17](source/23-unified-compat-timing-v4.17/build)
+gives every compatibility preset the same native-rate timing and presentation
+boundary. It eliminates duplicate presentation when the core submits multiple
+video callbacks in one simulation tick, adds callback/presentation diagnostics,
+and preserves the v4.16 verified-asphalt correction.
 
-[Download the latest Windows build](releases/windows/19-session-recorder-v4.13-windows.zip)
+[Download the latest Windows build](releases/windows/23-unified-compat-timing-v4.17-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [23-unified-compat-timing-v4.17](source/23-unified-compat-timing-v4.17) | Shared compatibility timing across all presets; one presentation per simulation tick and preset-matrix validation |
+| [22-asphalt-only-v4.16](source/22-asphalt-only-v4.16) | Removes unsafe BG2 grass classification; retains verified asphalt faces only |
+| [21-road-material-fix-v4.15](source/21-road-material-fix-v4.15) | Separates reused green road/shoulder faces from BG2 grass material treatment |
+| [20-first-track-materials-v4.14](source/20-first-track-materials-v4.14) | Recording-validated asphalt and turf detail for the first course |
 | [19-session-recorder-v4.13](source/19-session-recorder-v4.13) | Continuous lossless reconstruction sessions with compression, indexing, checkpoints, and extraction tool |
 | [18-compat-hd-wide-v4.12](source/18-compat-hd-wide-v4.12) | Output-resolution center and side geometry with separate original HUD/sprite composition |
 | [17-wide-objects-v4.11](source/17-wide-objects-v4.11) | Original textured side polygons, guarded edge sprites, and crisp-center architecture findings |

@@ -1,0 +1,63 @@
+STUNT RACE FX VERIFIED ASPHALT ONLY v4.16 - SOURCE INFORMATION
+================================================================
+
+v4.16 corresponds to source/22-asphalt-only-v4.16/source in the repository.
+BG2_MATERIAL_ROLLBACK.md documents removal of the unsafe BG2 grass pass.
+
+The inherited v4.15 fix is documented in MATERIAL_CLASSIFICATION_FIX.md.
+MATERIAL_CLASSIFICATION_FIX.md documents the road/grass classification fix.
+
+The inherited v4.14 analysis is documented in FIRST_TRACK_MATERIALS.md.
+FIRST_TRACK_MATERIALS.md documents how the complete local first-track recording
+was analyzed and converted into conservative runtime material rules. No session
+or ROM-derived asset is included.
+
+The inherited v4.13 recorder is documented in RECONSTRUCTION_RECORDING.md.
+See RECONSTRUCTION_RECORDING.md for the session format, captured channels,
+storage rules, controls, and inspection/extraction tool. COMPATIBILITY_HD_WIDE.md
+documents the inherited v4.12 renderer. ROM-free regression tests are under
+tools/perf.
+
+v4.9 adds read-only pre-clip camera-polygon observation, GPU side viewports,
+and scanline BG2 presentation. See COMPATIBILITY_WIDE.md in the matching
+expanded source snapshot. Original commercial source and assets are NOT
+included. Source/frontend/compat_wide_present.h and core/srf_wide_*.h contain
+the new path. Native renderer implementation is unchanged.
+
+v4.8 adds guarded original polygon capture and an optional outline overlay.
+See COMPATIBILITY_DRAW_STREAM.md. v4.7 diagnostics are inherited.
+Native renderer implementation and its launchers are unchanged from v4.6.
+
+Frontend and native-track research:
+  Source is included in the adjacent expanded source/frontend/ directory in
+  the repository.
+  NATIVE_TRACK_RESEARCH.md documents the traced format and current limitations.
+  COMPATIBILITY_PERFORMANCE.md documents profiling and optimization results.
+  SOURCE_INFORMED_RENDERER.md documents the v4.6 native geometry findings.
+  The repeatable benchmark tools are under tools/perf/.
+  The offline inspection tool is under tools/track/.
+  License: MIT. See FRONTEND-LICENSE-MIT.txt.
+
+Snes9x libretro compatibility core:
+  Official project: https://github.com/libretro/snes9x
+  Source revision: 890b5d4
+  The complete source snapshot plus local hooks are included under core/.
+  License: Snes9x personal/non-commercial license. See SNES9X-LICENSE.txt.
+
+SDL2:
+  Copyright (C) 1997-2025 Sam Lantinga.
+  License: zlib. See SDL2-LICENSE.txt.
+
+MinGW runtime:
+  libwinpthread-1.dll belongs to the source-built core's MinGW-w64 runtime.
+  Source/build details are in the adjacent expanded source directory.
+
+Material assets:
+  Runtime BMP tiles are included under assets/. Source images, processing
+  script, prompts, and notes are under source/materials/ in the repository.
+
+Game data:
+  No commercial ROM, save data, state, replay, capture, or generated track
+  export is included. Supply your own legally obtained USA Rev 1 ROM beside
+  StuntRaceFX.exe. The native cache is created in memory from that ROM at run
+  time and is not written into the package.
