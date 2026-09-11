@@ -8,18 +8,18 @@ This repository does not include the original game ROM, any commercial ROM, save
 
 ## Latest build
 
-[23-unified-compat-timing-v4.17](source/23-unified-compat-timing-v4.17/build)
-gives every compatibility preset the same native-rate timing and presentation
-boundary. It eliminates duplicate presentation when the core submits multiple
-video callbacks in one simulation tick, adds callback/presentation diagnostics,
-and preserves the v4.16 verified-asphalt correction.
+[24-treaded-tires-v4.18](source/24-treaded-tires-v4.18/build) adds an opt-in
+HD compatibility-renderer test for high-resolution treaded rear tires. It uses
+the measured original wheel footprint, scales with the output viewport, and
+leaves gameplay, timing, interpolation, and the native renderer unchanged.
 
-[Download the latest Windows build](releases/windows/23-unified-compat-timing-v4.17-windows.zip)
+[Download the latest Windows build](releases/windows/24-treaded-tires-v4.18-windows.zip)
 
 ## Version history
 
 | Version | Focus |
 | --- | --- |
+| [24-treaded-tires-v4.18](source/24-treaded-tires-v4.18) | Opt-in high-resolution treaded rear-wheel presentation test with proportional source-space scaling |
 | [23-unified-compat-timing-v4.17](source/23-unified-compat-timing-v4.17) | Shared compatibility timing across all presets; one presentation per simulation tick and preset-matrix validation |
 | [22-asphalt-only-v4.16](source/22-asphalt-only-v4.16) | Removes unsafe BG2 grass classification; retains verified asphalt faces only |
 | [21-road-material-fix-v4.15](source/21-road-material-fix-v4.15) | Separates reused green road/shoulder faces from BG2 grass material treatment |
